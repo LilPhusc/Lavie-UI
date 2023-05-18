@@ -1,0 +1,26 @@
+.headerCategories:before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    background-color: #0006;
+    pointer-events: none;
+}
+
+.headerCategories {
+    cursor: pointer;
+    animation: modalFadeIn ease 0.25s;
+}
+@keyframes modalFadeIn {
+    from {
+        top: 50%;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 100%;
+    }
+}
